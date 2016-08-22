@@ -1,0 +1,81 @@
+/**
+ * 获取svn版本号
+ * @return
+ */
+def getSvnRevision() {
+    new ByteArrayOutputStream().withStream { os ->
+        def result = exec {
+            executable = 'svn'
+            args = ['info']
+            standardOutput = os
+        }
+        def outputAsString = os.toString()
+        def matchLastChangedRev = outputAsString =~ /Last Changed Rev: (\d+)/
+
+        ext.svnRev = "${matchLastChangedRev[0][1]}".toInteger()
+    }
+    return svnRev
+}
+
+/**
+ * 根据不同平台来获取版本号
+ */
+def getSvnRevisionByPlatform() {
+    boolean flag = isInJenkins();
+    if (flag) {
+        ext.env = System.getenv()
+        ext.svnNum = env.SVN_REVISION?.toInteger()
+        return "$svnNum"
+    } else {
+        return getSvnRevision()
+    }
+}
+
+/**
+ * 判断是否有jenkins
+ * @return
+ */
+boolean isInJenkins() {
+    Map<String, String> map = System.getenv()
+
+    if (map == null) {
+        return false
+    }
+    String str = map.get("Path")
+    if (str != null) {
+        //it's windows
+        return false;
+    } else {
+        str = ""
+        Iterator it = map.iterator();
+        while (it.hasNext()) {
+            str += it.next();
+        }
+        if (str.contains("jenkins")) {
+            return true
+        } else {
+            return false;
+        }
+    }
+    return false
+}
+
+/**
+ * 获取Jenkins Build 号
+ * @return
+ */
+def getJenkinsBuildCode() {
+    boolean flag = isInJenkins();
+    if (flag) {
+        ext.env = System.getenv()
+        ext.buildNumber = env.BUILD_NUMBER?.toInteger()
+        return "$buildNumber"
+    } else {
+        return 0
+    }
+}
+
+ext {
+    svnRevisionByPlatform = getSvnRevisionByPlatform()
+    jenkinsRevision = getJenkinsBuildCode()
+}

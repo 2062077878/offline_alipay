@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation ="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_alipay_binding_protocol"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/protocol_title"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/protocol_tip"
+                android:textColor="@color/gray_ff595c5c"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/bt_alipay_protocol_agree"
+            style="@style/button_normal_style"
+            android:layout_centerHorizontal="true"
+            android:text="@string/protocol_agree"/>
+
+    </RelativeLayout>
+
+    <!--同意协议后，再显示，提示是否绑定-->
+    <RelativeLayout
+        android:id="@+id/rl_alipay_binding_tip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/binding_tip_title"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/binding_tip1"
+            android:textSize="10dp"
+            android:textColor="@color/gray_ff595c5c"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/binding_tip2"
+                android:textSize="10dp"
+                android:textColor="@color/gray_ff595c5c"/>
+        </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal ="true"
+                android:layout_marginTop="75dp"
+                android:background="@mipmap/alipay_conunity"
+                />
+            <Button
+                android:id="@+id/bt_alipay_binding_agree"
+                style="@style/button_normal_style"
+                android:text="@string/binding_now"
+                />
+
+    </RelativeLayout>
+
+    <!--扫描-->
+    <LinearLayout
+        android:id="@+id/ll_alipay_binding_qrcode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <RelativeLayout
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:background="@drawable/qrcode_bg">
+
+            <ImageView
+                android:id="@+id/iv_alipay_binding_img"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:layout_centerInParent="true"
+                android:contentDescription="@null"
+               />
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_binding_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/binding_explain"
+            android:textColor="@color/gray_ff595c5c"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

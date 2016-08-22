@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">支付宝</string>
+
+    <string name="initing">初始化中</string>
+
+    <string name="init_binding">正在绑定</string>
+    <string name="init_invalid">无效的状态</string>
+
+    <string name="protocol_title">手表支付协议</string>
+    <string name="protocol_tip">详情请在手机支付宝\n[智能手表]页面[手表支付协议]中查看</string>
+    <string name="protocol_agree">同意</string>
+
+    <string name="binding_tip_title">绑定我的手表</string>
+    <string name="binding_tip1">打开手机支付宝</string>
+    <string name="binding_tip2">扫描绑定</string>
+    <string name="binding_now">立即绑定</string>
+    <string name="binding_explain">扫码开始绑定</string>
+
+    <string name="password_tip_title">设置使用密码</string>
+    <string name="password_tip">每次使用\n都要输入使用密码。</string>
+    <string name="password_set_button">立即设置</string>
+    <string name="password_confirm_tip1">请再输入一次</string>
+    <string name="password_confirm_tip2">刚才设定的使用密码</string>
+    <string name="password_confirm_button">再次输入</string>
+
+    <string name="password_conflict">两次输入的密码不一致\n请重新设置使用密码</string>
+    <string name="password_conflict_set">重新设置</string>
+
+    <string name="password_finish_title">设置完成</string>
+    <string name="password_finish_use">开始使用</string>
+
+    <string name="password_error_title">使用密码错误</string>
+    <string name="password_error_try_again">继续尝试</string>
+
+    <string name="password_error_tip1">已错误3次。错误5\n次后，会冻结使用</string>
+
+    <string name="password_error_tip2">再次错误将会冻结使用\n忘记密码，可以通过\nAPP重置密码。</string>
+
+    <string name="password_error_tip3">密码错误次数太多\n请重新绑定支付宝</string>
+
+    <string name="pay_barcode">付款条形码</string>
+    <string name="pay_qr_code">付款二维码</string>
+    <string name="pay_setting">设置</string>
+    <string name="pay_unbinding">解除绑定</string>
+    <string name="pay_unbind_tip1">手表端解除绑定后</string>
+    <string name="pay_unbind_tip2">在手机端[智能手表]页面同步解绑</string>
+    <string name="pay_unbind_success">解绑成功</string>
+    <string name="pay_reset_password">重置密码</string>
+
+
+    <string name="create_barcode_error">生成条形码错误</string>
+    <string name="no_barcode_data">无条形码信息</string>
+    <string name="create_qrcode_error">生成二维码错误</string>
+    <string name="no_qrcode_data">无二维码信息</string>
+</resources>

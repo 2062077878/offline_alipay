@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wu.alipay.view.user.PayActivity">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pay_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+        <ImageView
+            android:id="@+id/iv_select_sign0"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:background="@drawable/alipay_selecte_solid"/>
+        <ImageView
+            android:id="@+id/iv_select_sign1"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/alipay_selecte_hollow"/>
+        <ImageView
+            android:id="@+id/iv_select_sign2"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/alipay_selecte_hollow"/>
+        <ImageView
+            android:id="@+id/iv_select_sign3"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/alipay_selecte_hollow"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

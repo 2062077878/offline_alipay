@@ -1,0 +1,2 @@
+include ':app'
+//里面主要声明一些需要加入gradle的module,这里没有

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black_bg">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="gray_ff888888">#FF888888</color>
+
+    <color name="gray_ff595c5c">#FF595C5C</color>
+
+    <color name="button_blue">#FF1FC2FF</color>
+
+    <color name="input_key_202020">#FF202020</color>
+    <color name="input_key_343435">#FF343435</color>
+
+    <color name="input_key_down">#FF010101</color>
+    <color name="input_key_up">#FF343435</color>
+    <color name="input_key_bg">#FF2D2D2D</color>
+
+    <color name="color_transparent">#00FFFFFF</color>
+
+</resources>

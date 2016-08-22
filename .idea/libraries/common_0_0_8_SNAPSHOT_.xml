@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="common-0.0.8-SNAPSHOT-">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/common-0.0.8-SNAPSHOT/jars/libs/httpmime-4.3.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/common-0.0.8-SNAPSHOT/jars/libs/qiniu-android-sdk-7.0.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/common-0.0.8-SNAPSHOT/jars/libs/qiniufileutils.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/common-0.0.8-SNAPSHOT/jars/libs/eebbkda-1.0.7.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/common-0.0.8-SNAPSHOT/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/common-0.0.8-SNAPSHOT/jars/libs/pinyin4j-2.5.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/common-0.0.8-SNAPSHOT/jars/libs/umeng-analytics-v5.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/common-0.0.8-SNAPSHOT/jars/libs/httpcore-4.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/common-0.0.8-SNAPSHOT/jars/libs/android-async-http-1.4.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/common-0.0.8-SNAPSHOT/jars/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/common-0.0.8-SNAPSHOT/jars/libs/bfc_utils.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

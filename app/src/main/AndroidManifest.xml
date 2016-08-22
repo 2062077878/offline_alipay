@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wu.alipay">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".AppApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        <activity android:name=".view.init.InitActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.binding.BindingActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".view.password.PasswordTipActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".view.password.PasswordConfictActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".view.password.PasswordFinishedActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".view.password.PasswordSetActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".view.password.PasswordInputActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".view.user.PayActivity"
+            android:launchMode="singleTask"/>
+
+    </application>
+
+</manifest>
